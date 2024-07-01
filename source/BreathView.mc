@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 
 class BreathView extends WatchUi.View {
+    private var _countdownElement;
 
     function initialize() {
         View.initialize();
@@ -10,6 +11,7 @@ class BreathView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
+        _countdownElement = findDrawableById("countdown")
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -28,6 +30,11 @@ class BreathView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+    }
+
+    function updateTimer(cycles as Number) as Void {
+        _countdownElement.setText("asdf");
+        WatchUi.requestUpdate();
     }
 
 }

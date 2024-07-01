@@ -1,4 +1,14 @@
 <layout id="MainLayout">
-    <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" />
+    <label
+        id="countdown"
+        text="4"
+        x="center"
+        y="center"
+        color="Graphics.COLOR_WHITE"
+        font="Graphics.FONT_NUMBER_THAI_HOT"
+        justification="Graphics.TEX"
+    />
+    <!-- <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE"
+        justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" /> -->
 </layout>
